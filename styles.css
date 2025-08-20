@@ -5,7 +5,10 @@
   margin: 0;
 }
 
-p {
+p,
+address,
+a {
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -122,3 +125,48 @@ main section h1 {
   margin-left: auto;
 }
 
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+section.contact-me {
+  color: white;
+  padding: 32px 16px;
+  background-color: #0891b2;
+}
+
+section.contact-me * {
+  margin: 16px 0;
+}
+
+section.contact-me h1 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+section.contact-me p {
+  font-weight: 400;
+}
+
+section.contact-me address a {
+  color: white;
+  font-size: clamp(12px, 90%, 36px);
+}
+
+section.contact-me ul {
+  color: black;
+}
+
+/* removes 27 pixel height occupied by picture element at the end of footer*/
+.author-image-footer picture {
+  display: block;
+  line-height: 0;
+}
+
+section.author-image-footer img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
