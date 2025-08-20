@@ -1,6 +1,8 @@
 * {
   font-family: "Playfair Display", sans-serif;
   font-weight: 200;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -61,3 +63,62 @@ ul.icons-container {
   justify-content: center;
   gap: 18px;
 }
+
+main section h1 {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.project-cards-container {
+  margin: 16px;
+  margin-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project-card {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 8px 4px rgb(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: clamp(250px, 100%, 600px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-card .project-details {
+  height: 180px;
+  margin: 6px;
+  padding: 16px;
+}
+
+.project-card .project-details .project-name-links * {
+  margin: 0;
+}
+
+.project-card .project-details .project-name-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-card .project-details .project-name-links h3 {
+  font-size: 32px;
+}
+
+.project-card .project-details i,
+.project-card .project-details img {
+  height: 32px;
+  width: 32px;
+  font-size: 30px;
+}
+
+.project-card .project-details .project-name-links i {
+  margin-left: auto;
+}
+
