@@ -3,6 +3,11 @@
   font-weight: 200;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 section.profile-photo-container {
   padding: 16px;
   position: relative;
@@ -27,4 +32,32 @@ section.profile-photo-container {
   padding: 16px;
   color: white;
   text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.6);
+}
+
+section.about-me-container {
+  padding: 16px;
+}
+
+section.about-me-container h2 {
+  margin: 4px 0;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+section.about-me-container p {
+  margin: 6px 0;
+  font-size: 24px;
+  font-weight: 325;
+  color: rgb(0, 0, 0, 1);
+  line-height: 32px;
+}
+
+ul.icons-container {
+  margin: 12px 0;
+  padding: 0;
+  font-size: 36px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
 }
