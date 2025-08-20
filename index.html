@@ -3,9 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <title>Responsive Homepage</title>
   </head>
   <body>
-    
+    <header>
+      <section class="profile-photo-container">
+        <picture>
+          <source
+            media="(width < 480px)"
+            srcset="assets/stock-images/working-woman-mobile.png"
+          />
+          <source
+            media="(width >= 480px)"
+            srcset="assets/stock-images/working-woman.png"
+          />
+          <img
+            src="assets/stock-images/working-woman.png"
+            alt="Photo of Author"
+          />
+        </picture>
+        <h1>Ashley Williams</h1>
+      </section>
+
+      <section class="about-me-container">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id
+          magnam quisquam facilis odio, laborum, aliquid illo natus nam
+          voluptatum corporis rem. Harum ratione veritatis aspernatur,
+          laboriosam esse ad neque beatae fugit eum? Quam reiciendis quod vero
+          voluptatibus explicabo aliquid voluptatum eaque, incidunt quo beatae.
+        </p>
+
+        <ul class="icons-container">
+          <li>
+            <i class="devicon-github-original colored"></i>
+          </li>
+          <li>
+            <i class="devicon-linkedin-plain colored"></i>
+          </li>
+          <li>
+            <i class="devicon-twitter-original colored"></i>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h1>My Work</h1>
+        <div class="project-card">
+          <img
+            src="assets/stock-images/project-1.png"
+            alt="Screenshot of Project"
+          />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="assets/stock-images/project-2.png"
+            alt="Screenshot of Project"
+          />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="assets/stock-images/project-3.png"
+            alt="Screenshot of Project"
+          />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="" alt="Screenshot of Project" />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="" alt="Screenshot of Project" />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="" alt="Screenshot of Project" />
+          <div class="project-details">
+            <h3>Project Name</h3>
+            <i class="devicon-github-original colored"></i>
+            <img src="assets/icons/open-in-new.svg" alt="Open in New Icon" />
+            <p>
+              Short description of the project. Just a couple of sentences will
+              do.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="contact-me">
+        <h1>Contact me</h1>
+        <p>
+          Please get in touch if you think out work could be mutually
+          beneficial!
+        </p>
+        <address>
+          1234 Random Road, Random Town, Middle of Nowhere, 12345 <br />
+          555-555-5555 <br />
+          <a href="mailto:ashleywilliams.is.not.real@gmail.com"
+            >ashleywilliams.is.not.real@gmail.com</a
+          >
+        </address>
+        <ul class="icons-container">
+          <li>
+            <i class="devicon-github-original"></i>
+          </li>
+          <li>
+            <i class="devicon-linkedin-plain"></i>
+          </li>
+          <li>
+            <i class="devicon-twitter-original"></i>
+          </li>
+        </ul>
+      </section>
+      <section class="author-image-footer">
+        <picture>
+          <source
+            media="(width < 480px)"
+            srcset="assets/stock-images/working-woman-2-mobile.png"
+          />
+          <source
+            media="(width >= 480px)"
+            srcset="assets/stock-images/working-woman-2.png"
+          />
+          <img
+            src="assets/stock-images/working-woman-2.png"
+            alt="Working Woman"
+          />
+        </picture>
+      </section>
+    </footer>
   </body>
 </html>
