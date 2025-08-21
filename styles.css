@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: linear-gradient(135deg, #80c0ff 0 10%, #fff 10% 100%);
+}
+
 p,
 address,
 a {
@@ -174,4 +178,48 @@ section.author-image-footer img {
   padding: 0;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 0 45px;
+  }
+
+  section.profile-photo-container {
+    margin-top: 128px;
+    padding: 32px 16px;
+    box-shadow: 0 0 8px 4px rgb(0, 0, 0, 0.3);
+    display: block;
+    position: relative;
+    background-color: white;
+  }
+
+  .profile-photo-container .profile-photo-wrapper {
+    float: left;
+    position: relative;
+    height: 190px;
+  }
+
+  .profile-photo-container .profile-photo-wrapper picture {
+    display: contents;
+  }
+
+  .profile-photo-container .profile-photo-wrapper img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 75%;
+    transform: translate(-10%, -40%);
+  }
+  .profile-photo-container .profile-photo-wrapper h1 {
+    position: absolute;
+    padding: 0;
+    top: -128px;
+    left: 20%;
+    right: -75%;
+    bottom: 128px;
+  }
+  .profile-photo-container ul {
+    display: none;
+  }
 }
