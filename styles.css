@@ -180,9 +180,13 @@ section.author-image-footer img {
   height: auto;
 }
 
+footer section.contact-me address img {
+  display: none;
+}
+
 @media (min-width: 600px) {
-  body {
-    padding: 0 45px;
+  body > * {
+    margin: 0 45px;
   }
 
   section.profile-photo-container {
@@ -229,10 +233,56 @@ section.author-image-footer img {
   }
 
   main section .project-cards-container {
-    margin: 24px 0 54px;
+    margin: 24px 0px 54px;
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(420px, 1fr);
+  }
+
+  footer {
+    display: flex;
+    margin: 0;
+    background-color: #0891b2;
+    padding: 0 64px;
+  }
+
+  footer section.contact-me {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer section.contact-me > * {
+    text-align: left;
+  }
+
+  footer section.contact-me address img {
+    display: inline;
+    height: 27px;
+    width: 27px;
+    margin: 0 8px;
+    color: white;
+    vertical-align: text-bottom;
+  }
+
+  footer .author-image-footer {
+    height: 100%;
+    align-self: center;
+  }
+
+  footer section.author-image-footer img {
+    width: minmax(225px, 250px);
+    height: minmax(400px, 450px);
+    aspect-ratio: 9 / 15;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 750px) {
+  footer section.author-image-footer img {
+    aspect-ratio: 9 / 12;
+    padding: 10%;
   }
 }
