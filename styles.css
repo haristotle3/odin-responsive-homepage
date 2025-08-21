@@ -286,3 +286,91 @@ footer section.contact-me address img {
     padding: 10%;
   }
 }
+
+@media (min-width: 1024px) {
+  body {
+  background-image: linear-gradient(155deg, #80c0ff 0 25%, #fff 25% 100%);
+  }
+
+  body > * {
+    margin: 0 64px;
+  }
+
+  section.profile-photo-container {
+    margin: 128px 0 90px;
+    padding: 32px 16px;
+    box-shadow: 0 0 8px 4px rgb(0, 0, 0, 0.3);
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+    background-color: white;
+  }
+
+  .profile-photo-container .profile-photo-wrapper {
+    float: none;
+    position: relative;
+    height: 100%;
+    margin: 0 64px;
+  }
+
+  .profile-photo-container .profile-photo-wrapper img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 75%;
+    transform: none;
+    transform: scale(1.4) translate(-10%);
+  }
+
+  .profile-photo-container .profile-photo-wrapper h1 {
+    position: absolute;
+    left: -30%;
+    right: -20%;
+    top: 95%;
+    bottom: 0;
+    font-size: 2.4rem;
+  }
+
+  section.profile-photo-container h2 {
+    text-align: left;
+  }
+
+  section.profile-photo-container p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .profile-photo-container ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 32px;
+  }
+
+  main section h1 {
+    margin: 16px 0;
+    text-align: left;
+  }
+
+  main section .project-cards-container {
+    margin: 24px 0px 54px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(420px, 1fr);
+  }
+
+  footer {
+    display: flex;
+    margin: 0;
+    background-color: #0891b2;
+    padding: 0 64px;
+  }
+
+  footer section.author-image-footer img {
+    height: minmax(425px, 450px);
+    width: minmax(600px, 650px);
+    padding: 0;
+    aspect-ratio: 10 / 9;
+    object-fit: cover;
+  }
+}
