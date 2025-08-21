@@ -364,12 +364,13 @@ footer section.contact-me address img {
     margin: 0;
     background-color: #0891b2;
     padding: 0 64px;
+    justify-content: center;
   }
 
   footer section.author-image-footer img {
     height: minmax(425px, 450px);
     width: minmax(600px, 650px);
-    padding: 0;
+    padding: 32px 0;
     aspect-ratio: 10 / 9;
     object-fit: cover;
   }
