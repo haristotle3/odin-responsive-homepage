@@ -21,24 +21,24 @@
   <body>
     <header>
       <section class="profile-photo-container">
-        <picture>
-          <source
-            media="(width < 600px)"
-            srcset="assets/stock-images/working-woman-mobile.png"
-          />
-          <source
-            media="(width >= 600px)"
-            srcset="assets/stock-images/working-woman.png"
-          />
-          <img
-            src="assets/stock-images/working-woman.png"
-            alt="Photo of Author"
-          />
-        </picture>
-        <h1>Ashley Williams</h1>
-      </section>
+        <div class="profile-photo-wrapper">
+          <picture>
+            <source
+              media="(width < 600px)"
+              srcset="assets/stock-images/working-woman-mobile.png"
+            />
+            <source
+              media="(width >= 600px)"
+              srcset="assets/stock-images/working-woman.png"
+            />
+            <img
+              src="assets/stock-images/working-woman.png"
+              alt="Photo of Author"
+            />
+          </picture>
+          <h1>Ashley Williams</h1>
+        </div>
 
-      <section class="about-me-container">
         <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id
@@ -185,8 +185,7 @@
               </p>
             </div>
           </div>
-
-          
+        </div>
       </section>
     </main>
     <footer>
