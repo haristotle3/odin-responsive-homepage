@@ -93,7 +93,7 @@ main section h1 {
 }
 
 .project-card img {
-  width: clamp(250px, 100%, 600px);
+  width: clamp(200px, 100%, 600px);
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -221,5 +221,18 @@ section.author-image-footer img {
   }
   .profile-photo-container ul {
     display: none;
+  }
+
+  main section h1 {
+    margin: 16px 0;
+    text-align: left;
+  }
+
+  main section .project-cards-container {
+    margin: 24px 0 54px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(420px, 1fr);
   }
 }
