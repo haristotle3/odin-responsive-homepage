@@ -3,6 +3,7 @@
   font-weight: 200;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 p,
@@ -21,7 +22,11 @@ section.profile-photo-container {
   align-items: center;
 }
 
-.profile-photo-container img {
+.profile-photo-wrapper {
+  position: relative;
+}
+
+.profile-photo-container .profile-photo-wrapper img {
   width: 85vw;
   height: auto;
   box-shadow: 0px 0px 8px 2px rgb(0, 0, 0, 0.3);
@@ -29,7 +34,7 @@ section.profile-photo-container {
 
 .profile-photo-container h1 {
   position: absolute;
-  left: 5%;
+  left: 1%;
   right: 5%;
   bottom: 2.5%;
   font-size: 3.1rem;
@@ -39,17 +44,13 @@ section.profile-photo-container {
   text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.6);
 }
 
-section.about-me-container {
-  padding: 16px;
-}
-
-section.about-me-container h2 {
+section.profile-photo-container h2 {
   margin: 4px 0;
   text-align: center;
   font-size: 2.3rem;
 }
 
-section.about-me-container p {
+section.profile-photo-container p {
   margin: 6px 0;
   font-size: 24px;
   font-weight: 325;
@@ -95,7 +96,7 @@ main section h1 {
 }
 
 .project-card .project-details {
-  height: 180px;
+  height: 200px;
   margin: 6px;
   padding: 16px;
 }
@@ -112,6 +113,10 @@ main section h1 {
 
 .project-card .project-details .project-name-links h3 {
   font-size: 32px;
+}
+
+.project-card .project-details p {
+  margin-top: 12px;
 }
 
 .project-card .project-details i,
